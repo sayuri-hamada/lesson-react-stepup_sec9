@@ -3,7 +3,10 @@
         "./src/**/*"
     ],
     "compilerOptions": {
-        // "strict": true,
+        // 厳しいめなルールを設定していて、新規の場合はtrueのままで構築するのが望ましい
+        "strict": true,
+        // anyの設定を許可する
+        "noImplicitAny": true,
         "esModuleInterop": true,
         "lib": [
             "dom",
